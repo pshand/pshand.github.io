@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Reel</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #ccc;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .video-container {
+        margin-top: 60px;
+        width: 720px;
+        max-width: 100%;
+      }
+
+      video {
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+
+      .annotations {
+        margin-top: 40px;
+        width: 720px;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .clip {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #333;
+      }
+
+      .clip-title {
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .clip-notes {
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <video controls>
+        <source
+          src="https://www.dropbox.com/scl/fi/19stflgvto2nialh4soqs/pete-shand-2025-reel.mp4?rlkey=g3jv0bstzg33e8lp33b0g4v88&dl=1"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="annotations">
+      <div class="clip">
+        <div class="clip-title">Clip 1 – Client Name</div>
+        <div class="clip-notes">Description of what you did here.</div>
+      </div>
+
+      <div class="clip">
+        <div class="clip-title">Clip 2 – Another Client</div>
+        <div class="clip-notes">Quick note about animation, rigging, etc.</div>
+      </div>
+
+      <!-- Repeat for each clip -->
+    </div>
+  </body>
+</html>
